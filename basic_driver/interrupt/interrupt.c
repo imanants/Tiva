@@ -1,7 +1,7 @@
-#include"interrupt.h"
-#include"generic.h"
-#include"led.h"
-#include"uart.h"
+#include"interrupt\interrupt.h"
+#include"generic\generic.h"
+#include"led\led.h"
+#include"uart\uart.h"
 extern uint8_t uart1_read_data;
 extern unsigned char uart1_write_data[255];
 char *name1 = "anant kumar singh";

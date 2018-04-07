@@ -1,7 +1,7 @@
 #ifndef __SYS__H
 #define __SYS__H
 #include "TM4C123.h"                    // Device header
-#include"generic.h"
+#include"generic\generic.h"
 
 extern void sys_init(void);
 extern void sys_bus_init(void);

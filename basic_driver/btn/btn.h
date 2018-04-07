@@ -1,7 +1,7 @@
 #ifndef __BTN__H
 #define __BTN__H
 #include "TM4C123.h"                    // Device header
-#include "generic.h"
+#include "generic\generic.h"
 
 typedef enum
 {

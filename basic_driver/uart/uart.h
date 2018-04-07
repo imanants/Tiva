@@ -1,6 +1,6 @@
 #ifndef __UART__H
 #define __UART__H
-#include "generic.h"
+#include "generic\generic.h"
 
 /*
 UART0 - connected to debugger port

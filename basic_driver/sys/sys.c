@@ -1,7 +1,7 @@
-#include"sys.h"
-#include"generic.h"
-#include"interrupt.h"
-#include"uart.h"
+#include"sys\sys.h"
+#include"generic\generic.h"
+#include"interrupt\interrupt.h"
+#include"uart\uart.h"
 
 void sys_init(void)
 {

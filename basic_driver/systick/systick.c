@@ -1,5 +1,5 @@
-#include"systick.h"
-#include"generic.h"
+#include"systick\systick.h"
+#include"generic\generic.h"
 #define MAX_DELAY 14000u
 #define SYS_TICK_FRQ_DiV_1000 4000ul
 void systick_init(uint32_t ms,CLK_SRC soure)

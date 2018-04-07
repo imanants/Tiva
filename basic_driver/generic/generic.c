@@ -1,7 +1,7 @@
 #include "TM4C123.h"                    // Device header
-#include"generic.h"
-#include"led.h"
-#include"uart.h"
+#include"generic\generic.h"
+#include"led\led.h"
+#include"uart\uart.h"
 
 GPIOA_Type* gen_get_port_ptr(port_num port)
 {
