@@ -128,9 +128,18 @@ void uart_init(uart_num num,uint32_t baud_rate)
 	uart_array[num]->ptr_port->LOCK = GPIO_LOCK;
 	/*disable uart before setting of baud rate*/
 	uart_array[num]->ptr_uart->CTL &= ~(SET << BIT0);
-	/*set baut rate 9600 bps*/
-	uart_array[num]->ptr_uart->IBRD = 325u;
-	uart_array[num]->ptr_uart->FBRD = 33u;
+	if(baud_rate == 0)
+	{
+		/*set baut rate 9600 bps*/
+		uart_array[num]->ptr_uart->IBRD = 325u;
+		uart_array[num]->ptr_uart->FBRD = 33u;
+	}
+	else
+	{
+		/*set baut rate 115200 bps*/
+		uart_array[num]->ptr_uart->IBRD = 27u;
+		uart_array[num]->ptr_uart->FBRD = 8u;
+	}
 	/*write latch register*/
 	/* 8 bit, no parity bits, one stop, FIFOs*/
 	uart_array[num]->ptr_uart->LCRH = 0x60;

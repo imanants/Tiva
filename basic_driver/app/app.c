@@ -26,7 +26,7 @@ int main(void)
 		length =  strlen(name);
 		if(uart_array[USART5]->rx_data.state == READY)
 		{
-			uart_rx_data(USART5,name,10,rx_callback);
+			uart_rx_data(USART5,name,120,rx_callback);
 		}
 		//led_on(RED);
 		//led_on(BLUE);

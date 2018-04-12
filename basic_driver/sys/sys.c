@@ -13,7 +13,7 @@ void sys_init(void)
 	uart_fill_uart_details();
 	/*initialize interrupt*/
 	interrupt_init();
-	uart_init(USART5,9600);
+	uart_init(USART5,01);
 }
 
 void sys_bus_init(void)
